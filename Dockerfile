@@ -1,15 +1,17 @@
 FROM php:5.6-apache
 
-# Enable Apache mod_rewrite if needed
+# Enable Apache mod_rewrite
 RUN a2enmod rewrite
 
-# Copy your app code to Apache's root directory
+# Install necessary PHP extensions
+RUN docker-php-ext-install mysqli pdo pdo_mysql
+
+# Copy app files into Apache's web root
 COPY . /var/www/html
 
-# Set permissions (optional, depends on your app)
+# Fix permissions (optional but good)
 RUN chown -R www-data:www-data /var/www/html
 
-# Expose the default HTTP port
-EXPOSE 88
+EXPOSE 80
 
 CMD ["apache2-foreground"]

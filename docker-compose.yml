@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    expose:
+      - "80"
+    labels:
+      coolify.proxy: "true"
+      coolify.port: "80"
+      coolify.domain: "old.dreamstorchlight.org"  # replace with your real domain
