@@ -8,4 +8,5 @@ services:
     labels:
       coolify.proxy: "true"
       coolify.port: "80"
-      coolify.domain: "old.dreamstorchlight.org"  # replace with your real domain
+      coolify.type: "docker"           # <-- Forces Coolify to treat as full image
+      coolify.domain: "old.dreamstorchlight.org"
