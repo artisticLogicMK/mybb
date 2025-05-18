@@ -8,12 +8,12 @@
  */
 
 $config['database']['type'] = 'mysqli';
-$config['database']['database'] = 'dreamst1_98ytw1v';
+$config['database']['database'] = 'mybb';
 $config['database']['table_prefix'] = 'mybb_';
 
-$config['database']['hostname'] = 'localhost';
-$config['database']['username'] = 'dreamst1_u7qa1Mo';
-$config['database']['password'] = 'lordjesusQ07';
+$config['database']['hostname'] = '161.97.127.198:3306';
+$config['database']['username'] = 'dreamer';
+$config['database']['password'] = 'dreamstorchlight';
 
 /**
  * Admin CP directory
