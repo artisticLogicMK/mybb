@@ -11,3 +11,5 @@ RUN chown -R www-data:www-data /var/www/html
 
 # Expose the default HTTP port
 EXPOSE 88
+
+CMD ["apache2-foreground"]
