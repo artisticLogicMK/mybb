@@ -1,0 +1,59 @@
+body {
+	overflow: hidden;
+}
+
+#search_button {
+		padding: 6px 3px 6px;
+}
+
+#login .namelabel, #login .passlabel {
+	font-size: 16px;
+        text-transform: uppercase;
+        margin: 0 11px 0 0;
+        font-weight: bold;
+        position: relative;
+        top: -27px;
+}
+
+#login .submit, a.register:link, a.register:visited, a.register:active {
+	background: #1b94c3;
+        border: none;
+        padding: 4px 20px;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #fff;
+        margin-top: 20px;
+        float: left;
+}
+
+a.register:link, a.register:visited, a.register:active {
+	background: #b9b9b9;
+        float: right;
+        line-height: 1.25;
+        margin: 20px 9px 0 0;
+        padding: 8px 40px;
+}
+
+.bottommenu {
+		float: left;
+}
+
+#lang_select {
+		margin-top: -1px;
+}
+
+.navigation {
+		padding-top: 3px;
+}
+
+.button {
+		padding: 1px 6px;
+}
+
+.thead .button, .tfoot .button {
+		padding: 0 4px;
+}
+
+.ui-dialog {
+	width: 540px !important;
+}

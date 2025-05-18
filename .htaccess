@@ -1,0 +1,63 @@
+# BEGIN WordPress
+
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+
+# END WordPress
+
+RewriteEngine on
+
+# BEGIN cPanel-generated php ini directives, do not edit
+# Manual editing of this file may result in unexpected behavior.
+# To make changes to this file, use the cPanel MultiPHP INI Editor (Home >> Software >> MultiPHP INI Editor)
+# For more information, read our documentation (https://go.cpanel.net/EA4ModifyINI)
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>
+<IfModule php5_module>
+   php_flag display_errors Off
+   php_value max_execution_time 30
+   php_value max_input_time 60
+   php_value max_input_vars 1000
+   php_value memory_limit 512M
+   php_value post_max_size 218M
+   php_value session.gc_maxlifetime 1440
+   php_value session.save_path "/var/cpanel/php/sessions/alt-php56"
+   php_value upload_max_filesize 512M
+   php_flag zlib.output_compression On
+</IfModule>
+<IfModule lsapi_module>
+   php_flag display_errors Off
+   php_value max_execution_time 30
+   php_value max_input_time 60
+   php_value max_input_vars 1000
+   php_value memory_limit 512M
+   php_value post_max_size 218M
+   php_value session.gc_maxlifetime 1440
+   php_value session.save_path "/var/cpanel/php/sessions/alt-php56"
+   php_value upload_max_filesize 512M
+   php_flag zlib.output_compression On
+</IfModule>
+# END cPanel-generated php ini directives, do not edit
+
+RewriteCond %{HTTP_REFERER} !^http://dreamstorchlight.org/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://dreamstorchlight.org$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.dreamstorchlight.org/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.dreamstorchlight.org$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://dreamstorchlight.org/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://dreamstorchlight.org$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.dreamstorchlight.org/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.dreamstorchlight.org$      [NC]
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ - [F,NC]
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php82” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php82___lsphp .php .php8 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

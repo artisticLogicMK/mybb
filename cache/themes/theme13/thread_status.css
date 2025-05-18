@@ -1,0 +1,45 @@
+.thread_status { 
+	display: inline-block; 
+	width: 13px;
+	margin-left: 2px;
+}
+
+.thread_status:after { 
+	 font-family: "Font Awesome 5 Free"; 
+	content: "\f27a";
+	color: #3f5efb;
+	opacity:0.3;
+	font-size: 18px;
+} 
+
+[class*="hot"]:after { 
+	color: #fc6042; 
+	content: "\f27a"; 
+	padding-left: 1px; 
+}
+
+[class*="new"]:after { 
+	opacity:1;
+	font-weight:900;
+} 
+
+[class*="closefolder"]:after { 
+	color: #777;
+	content: "\f023"; 
+	padding-left: 2px; 
+	font-weight:900;
+}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
