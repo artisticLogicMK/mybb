@@ -3,10 +3,6 @@ version: '3.8'
 services:
   web:
     build: .
-    expose:
-      - "80"
-    labels:
-      coolify.proxy: "true"
-      coolify.port: "80"
-      coolify.type: "docker"           # <-- Forces Coolify to treat as full image
-      coolify.domain: "old.dreamstorchlight.org"
+    ports:
+      - "5001:83"  # Host:Container — Host port 8080 forwards to Apache's port 80
+    restart: always
