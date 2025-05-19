@@ -11,7 +11,7 @@ $config['database']['type'] = 'mysqli';
 $config['database']['database'] = 'mybb';
 $config['database']['table_prefix'] = 'mybb_';
 
-$config['database']['hostname'] = '161.97.127.198:3306';
+$config['database']['hostname'] = 'cmauih8yz000uqlao4n54sv5i';
 $config['database']['username'] = 'dreamer';
 $config['database']['password'] = 'dreamstorchlight';
 
