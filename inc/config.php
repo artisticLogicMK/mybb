@@ -12,7 +12,7 @@ $config['database']['database'] = 'mybb';
 $config['database']['table_prefix'] = 'mybb_';
 
 $config['database']['hostname'] = 'cmauih8yz000uqlao4n54sv5i';
-$config['database']['username'] = 'dreamer';
+$config['database']['username'] = 'root';
 $config['database']['password'] = 'dreamstorchlight';
 
 /**
