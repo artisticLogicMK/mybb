@@ -1,8 +1,0 @@
-version: '3.8'
-
-services:
-  web:
-    build: .
-    ports:
-      - "5001:83"  # Host:Container — Host port 8080 forwards to Apache's port 80
-    restart: always
