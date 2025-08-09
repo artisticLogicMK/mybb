@@ -13,7 +13,7 @@ $config['database']['table_prefix'] = 'mybb_';
 
 $config['database']['hostname'] = 'cmauih8yz000uqlao4n54sv5i';
 $config['database']['username'] = 'root';
-$config['database']['password'] = 'dreamstorchlight';
+$config['database']['password'] = '$Dr3qmT0r(hL!9Ht';
 
 /**
  * Admin CP directory
